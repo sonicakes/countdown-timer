@@ -1,1 +1,16 @@
 @import 'tailwindcss';
+
+@theme {
+  --font-redhat: "Red Hat Text", sans-serif;
+  /* primary */
+  --color-grayish-blue: hsl(237, 18%, 59%);
+  --color-soft-red: hsl(345, 95%, 68%);
+  /* neutral */
+  --color-dark-desat-blue: hsl(236, 21%, 26%);
+  --color-very-dark-blue: hsl(235, 16%, 14%);
+  --color-bluish-black: hsl(234, 17%, 12%);
+}
+
+body {
+  @apply font-redhat font-bold text-sm;
+}
