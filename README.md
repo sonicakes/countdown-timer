@@ -22,6 +22,8 @@ This is a solution to the [Launch countdown timer challenge on Frontend Mentor](
 
 I've used this challenge to practice useEffect hook in React for [this course in Udemy](https://www.udemy.com/course/modern-react-from-the-beginning/)
 
+Since it requires a countdown to a specific date, I've chosen to count to the overseas trip - February, 9 2026, 12.15pm AEDT.
+
 Users should be able to:
 
 - See hover states for all interactive elements on the page
