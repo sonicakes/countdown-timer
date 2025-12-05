@@ -6,7 +6,7 @@ const Timer = () => {
   const timerRef = useRef(null);
 
   const futureTime = new Date("2026-02-09T12:15:00").getTime();
-  // Note: This string format assumes the time is local (AEDT in your context).
+  // assumes the time is local (AEDT)
   const currentTime = new Date().getTime();
   const diff = futureTime - currentTime;
   const timeUnits = getTimeRemaining(diff);
@@ -22,18 +22,20 @@ const Timer = () => {
 
 
   return (
-    <>
-      {/* <div>
+    <div className="max-w-[600px]">
+      {/* 
+      TODO - make today clock in the upper corner
+      <div>
         today is {new Date().toLocaleDateString()}{" "}
         {new Date().toLocaleTimeString()}
       </div> */}
-      <div> Time remaining to holidays is: </div>
-      <div className="flex gap-2">
+      <h1 className="text-xl text-white uppercase font-bold tracking-[6px] text-center mb-10">Holidays are coming in</h1>
+      <div className="grid gap-2 grid-cols-4">
         {Object.keys(timeUnits).map((key) => (
           <Square key={key} label={key} value={timeUnits[key]} />
         ))}
       </div>
-    </>
+    </div>
   );
 };
 
