@@ -22,7 +22,7 @@ const Timer = () => {
 
 
   return (
-    <div className="max-w-[600px]">
+    <div className="max-w-[600px] z-100 relative">
       {/* 
       TODO - make today clock in the upper corner
       <div>
