@@ -12,7 +12,7 @@ function App() {
         <Timer />
         <img src={stars} className="absolute z-90 w-full h-full object-cover" />
         <img src={hills} className="absolute bottom-0 z-95 w-full"/>
-        <div class="absolute z-10 inset-0 bg-purple-900/10"></div>
+        <div className="absolute z-10 inset-0 bg-purple-900/10"></div>
         <div className="absolute bottom-12 z-95 grid max-w-[300px] grid-cols-3 gap-4">
           <img src={fb}/>
           <img src={insta}/>
