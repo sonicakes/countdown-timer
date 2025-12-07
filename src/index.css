@@ -16,56 +16,21 @@ body {
   @apply font-redhat font-bold text-sm h-screen bg-very-dark-blue;
 }
 
-/* .animated {
-  animation: flash-pulse 0.4s ease-out; 
-}
-
-@keyframes flash-pulse {
-  0% { transform: scale(1); opacity: 1; }
-  50% { transform: scale(1.1); opacity: 0.8; }
-  100% { transform: scale(1); opacity: 1; }
-} */
-
 .cutout-top {
-  clip-path: polygon(
-    0 0,          /* 1. Top-Left Corner */
-    100% 0,       /* 2. Top-Right Corner */
-
-    /* 3. Start the Bottom-Right Diagonal Cut-out */
-    100% calc(100% - 7px), 
-    
-    /* 4. End the Bottom-Right Diagonal Cut-out */
-    calc(100% - 7px) 100%, 
-
-    /* 5. Start the Bottom-Left Diagonal Cut-out */
-    7px 100%, 
-    
-    /* 6. End the Bottom-Left Diagonal Cut-out */
-    0 calc(100% - 7px), 
-
-    /* 7. Return to the start (Top-Left) */
-    0 0
-  );
+  clip-path: polygon(0 0,
+      100% 0,
+      100% calc(100% - 7px),
+      calc(100% - 7px) 100%,
+      7px 100%,
+      0 calc(100% - 7px),
+      0 0);
 }
 
 .cutout-bottom {
-  clip-path: polygon(
-    /* 1. Start the Top-Left Diagonal Cut-out */
-    0 7px,        
-    
-    /* 2. End the Top-Left Diagonal Cut-out */
-    7px 0,       
-
-    /* 3. Start the Top-Right Diagonal Cut-out */
-    calc(100% - 7px) 0, 
-    
-    /* 4. End the Top-Right Diagonal Cut-out */
-    100% 7px, 
-
-    /* 5. Bottom-Right Corner */
-    100% 100%, 
-
-    /* 6. Bottom-Left Corner */
-    0 100%
-  );
+  clip-path: polygon(0 7px,
+      7px 0,
+      calc(100% - 7px) 0,
+      100% 7px,
+      100% 100%,
+      0 100%);
 }
