@@ -13,7 +13,7 @@
 }
 
 body {
-  @apply font-redhat font-bold text-sm h-screen bg-very-dark-blue;
+  @apply font-redhat text-grayish-blue font-bold text-sm h-screen bg-very-dark-blue;
 }
 
 .cutout-top {
@@ -33,4 +33,13 @@ body {
       100% 7px,
       100% 100%,
       0 100%);
+}
+
+/* Targets the calendar icon in Chrome/Edge/Safari */
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-calendar-picker-indicator,
+input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    /* This filter turns black/gray into white */
+    filter: invert(100%) brightness(100%) contrast(100%);
 }

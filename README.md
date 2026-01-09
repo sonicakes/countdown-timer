@@ -17,7 +17,7 @@ This is a solution to the [Launch countdown timer challenge on Frontend Mentor](
 
 I've used this challenge to practice useRef hook in React for [this course in Udemy](https://www.udemy.com/course/modern-react-from-the-beginning/)
 
-Since it requires a countdown to a specific date, I've chosen to count to the overseas trip in Feb 2025
+I made label, date & time to be props so user can specify & reset the countdown. I've made my Feb holidays a button to prepopulate to that date.
 
 Users should be able to:
 
@@ -51,5 +51,4 @@ I would like to implement the animated 'flip' of the card. I've experimented wit
 
 Moreover, I would like to add a little corner window with today's date to have a reference.
 
-Finally, the label of 'holidays are coming...', countdown end date & theme (e.g. default is 'space launch') should be props.
 
